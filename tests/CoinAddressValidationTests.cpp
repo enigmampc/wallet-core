@@ -322,6 +322,14 @@ TEST(Coin, ValidateAddresKavaa) {
     EXPECT_FALSE(validateAddress(TWCoinTypeKava, "kava1hkfq3zahaqkkzx5mjnamwjsfpq2jk7z09wt000"));
 }
 
+TEST(Coin, ValidateAddressSecretNetwork) {
+    EXPECT_TRUE(validateAddress(TWCoinTypeSecretNetwork, "enigma1pnndgfwsrff86263xzpc5cd3t6yfvgjyqc87jh"));
+    // wrong prefix
+    EXPECT_FALSE(validateAddress(TWCoinTypeSecretNetwork, "cosmos1hkfq3zahaqkkzx5mjnamwjsfpq2jk7z0emlrvp"));
+    // wrong checksum
+    EXPECT_FALSE(validateAddress(TWCoinTypeSecretNetwork, "enigma1pnndgfwsrff86263xzpc5cd3t6yfvgjyqc8000"));
+}
+
 TEST(Coin, ValidateAddresCardano) {
     // valid V3 address
     EXPECT_TRUE(validateAddress(TWCoinTypeCardano, "addr1s3hdtrqgs47l7ue5srga8wmk9dzw279x9e7lxadalt6z0fk64nnn2mgtn87mrny9r77gm09h6ecslh3gmarrvrp9n4yzmdnecfxyu59j5lempe"));

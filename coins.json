@@ -1266,6 +1266,30 @@
         }
     },
     {
+        "id": "secretnetwork",
+        "name": "SecretNetwork",
+        "symbol": "SCRT",
+        "decimals": 6,
+        "blockchain": "Cosmos",
+        "derivationPath": "m/44'/529'/0'/0/0",
+        "curve": "secp256k1",
+        "publicKeyType": "secp256k1",
+        "hrp": "enigma",
+        "explorer": {
+            "url": "https://explorer.cashmaney.com",
+            "txPath": "/transactions/",
+            "accountPath": "/account/",
+            "sampleTx": "443F0FDEF490F4C297C16A73C677DB5C0BF01A2EB67A14639CFF001EE0EEDFC7",
+            "sampleAccount": "enigma1qx5pppsfrqwlnmxj7prpx8rysxm2u5vz4hlwlr"
+        },
+        "info": {
+            "url": "https://scrt.network/",
+            "client": "https://github.com/enigmampc/SecretNetwork",
+            "clientPublic": "https://mainnet-node.chainofsecrets.org/",
+            "clientDocs": "https://api.chainofsecrets.org/"
+        }
+    },
+    {
         "id": "kava",
         "name": "Kava",
         "symbol": "KAVA",
