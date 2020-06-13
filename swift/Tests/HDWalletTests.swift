@@ -393,6 +393,6 @@ class HDWalletTests: XCTestCase {
         let key = HDWallet.test.getKeyForCoin(coin: coin)
         let address = coin.deriveAddress(privateKey: key)
 
-        XCTAssertEqual(address, "enigma1pe8xm2r46rmctsukuqu7gl900vzprfsp4sguc3")
+        XCTAssertEqual(address, "enigma1zrst72upua78pylhku9csxd5zmhsyrk7t2wvvv")
     }
 }

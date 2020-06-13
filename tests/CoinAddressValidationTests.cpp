@@ -323,11 +323,11 @@ TEST(Coin, ValidateAddresKavaa) {
 }
 
 TEST(Coin, ValidateAddressSecretNetwork) {
-    EXPECT_TRUE(validateAddress(TWCoinTypeSecretNetwork, "enigma1pnndgfwsrff86263xzpc5cd3t6yfvgjyqc87jh"));
+    EXPECT_TRUE(validateAddress(TWCoinTypeSecretNetwork, "enigma1hkfq3zahaqkkzx5mjnamwjsfpq2jk7z0gnxlfr"));
     // wrong prefix
     EXPECT_FALSE(validateAddress(TWCoinTypeSecretNetwork, "cosmos1hkfq3zahaqkkzx5mjnamwjsfpq2jk7z0emlrvp"));
     // wrong checksum
-    EXPECT_FALSE(validateAddress(TWCoinTypeSecretNetwork, "enigma1pnndgfwsrff86263xzpc5cd3t6yfvgjyqc8000"));
+    EXPECT_FALSE(validateAddress(TWCoinTypeSecretNetwork, "enigma1hkfq3zahaqkkzx5mjnamwjsfpq2jk7z0gnxl00"));
 }
 
 TEST(Coin, ValidateAddresCardano) {
